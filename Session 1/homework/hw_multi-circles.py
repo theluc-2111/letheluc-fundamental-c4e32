@@ -1,12 +1,8 @@
 from turtle import *
-
 speed(-1)
-shape('turtle')
-
+shape("turtle")
+color("green")
 for v in range(36):
-    for v in range(90):
-        forward(4)
-        left(4)
+    circle(50)
     left(10)
-
 mainloop()
