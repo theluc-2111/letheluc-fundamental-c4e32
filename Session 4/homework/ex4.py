@@ -14,5 +14,5 @@ for i in range(len(goi_cau_hoi)):
         print('Bingo')
         so_cau_dung += 1
     else:
-        print(':(')
+        print('You are wrong.:(.The answer of this question is',phuong_an[bo_cau_hoi['answer']],',so the right choice is:',bo_cau_hoi['answer'])
 print('You correctly answer',so_cau_dung,'out of',len(goi_cau_hoi),'questions')
