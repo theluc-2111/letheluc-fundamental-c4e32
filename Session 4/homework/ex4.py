@@ -11,8 +11,8 @@ for i in range(len(goi_cau_hoi)):
         print(k,'.',l)
     your_choice = int(input('Your choice: '))
     if your_choice == bo_cau_hoi['answer']:
-        print('Bingo')
+        print("Bingo. That's great!")
         so_cau_dung += 1
     else:
-        print('You are wrong.:(.The answer of this question is',phuong_an[bo_cau_hoi['answer']],',so the right choice is:',bo_cau_hoi['answer'])
+        print("You're wrong.The answer of this question is",phuong_an[bo_cau_hoi['answer']],',so the right choice must be:',bo_cau_hoi['answer'])
 print('You correctly answer',so_cau_dung,'out of',len(goi_cau_hoi),'questions')
