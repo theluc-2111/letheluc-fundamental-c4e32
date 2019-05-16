@@ -18,8 +18,8 @@
 #         print('Nghĩa của từ là:',dic[tra_cuu])
 #     else:
 #         print('Từ này không có trong từ điển')
-for k,v in dic.items():
-        print(k,":",v)
+# for k,v in dic.items():
+#         print(k,":",v)
 
 
 # person = [{'sdt':['0123456789','12351263461237'],'name':'luc','age':21,'address':'hà nội'},
@@ -33,3 +33,16 @@ for k,v in dic.items():
 # for p in person:
 #     if sdt in p['sdt']:
 #         print(p['name'].split(' ')[-1])
+letter_counts = {}
+data = input("Enter a sentence: ")  # ask user to enter a sentence
+
+for letter in data:
+    if letter != " ":
+        letter = letter.lower()     # transform all letters to the same case
+        letter_counts[letter] = letter_counts.get(letter,0)+1 
+        # count the number of each letter in the sentence
+
+# sort the letters in alphabetical order. 
+letter_items = list(letter_counts.items())
+letter_items.sort()
+print(letter_items)
