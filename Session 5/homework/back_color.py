@@ -11,10 +11,10 @@ def get_shapes():
     return shapes
 
 def generate_quiz():
-    choice_shape = choice(shapes)
-    choice_color = choice(shapes)
+    choice_text = choice(shapes)['text']
+    choice_color = choice(shapes)['color']
     Qtype = random.randint(0,1)
-    return [choice_shape['text'],choice_color['color'],Qtype]
+    return [choice_text,choice_color,Qtype]
 
 def mouse_press(x, y, text, color, quiz_type):
     if quiz_type == 0:
