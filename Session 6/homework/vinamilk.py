@@ -27,7 +27,7 @@ for i in Du_lieu:
         du_lieu['Cột '+str(b)] = info_hang[b-1].text.strip()
         b+=1
         if b==6:
-            du_lieu['Cột '+str(b)] = 'ai làm được chỉ giúp với.:((('
+            du_lieu['Cột '+str(b)] = "I'm thinking about it"
             bctc.append(du_lieu)
             break
 pyexcel.save_as(records=bctc, dest_file_name="BCTC_Vinamilk.xlsx")
