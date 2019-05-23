@@ -9,14 +9,14 @@ Du_lieu = list(soup.find_all('tr',{'class':['r_item','r_item_a']}))
 bctc = []
 a = 1
 hang={}
-while a<=5:
+while a<=6:
     if a == 1:
         hang['Cột 1'] = 'Chỉ tiêu'
         a += 1
     else:
         hang['Cột '+str(a)] = Chi_tieu[a-1].text.strip()
         a += 1
-        if a > 5:
+        if a > 6:
             bctc.append(hang)
             break
 for i in Du_lieu:
